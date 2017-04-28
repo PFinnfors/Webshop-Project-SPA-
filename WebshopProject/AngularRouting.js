@@ -18,5 +18,5 @@
                     templateUrl: "/Products/Top2017"
                 });
         });
-    
+ 
 })();
