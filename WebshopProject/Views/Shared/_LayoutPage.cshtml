@@ -27,41 +27,42 @@
 <body style="background: url('http://i66.tinypic.com/ka04u9.jpg') no-repeat center center fixed;
       background-size: 100% 100%;
       color: white">
-        @* Shop Header with two rows *@
-        <header>
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"></a>
-                        <img src="http://i63.tinypic.com/4ht992.jpg" />
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active">@Html.ActionLink("Movies", "Index", "Home")</li>
-                            <li>@Html.ActionLink("Available Movies", "type", "Home")</li>
-                            <li>@Html.ActionLink("Contact us", "Contact", "Home")</li>
-                        </ul>
-                    </div>
+
+    @* Shop Header with two rows *@
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="http://i63.tinypic.com/4ht992.jpg" />
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">@Html.ActionLink("Movies", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Available Movies", "type", "Home")</li>
+                        <li>@Html.ActionLink("Contact us", "Contact", "Home")</li>
+                    </ul>
                 </div>
             </div>
-          </header>
-
-        <div class="row">
-            
-            <div class="col-md-12">
-                @* index.cshtml loads here *@
-                @RenderBody()
-            </div>
-
         </div>
+    </header>
+
+    <div class="row">
+
+        <div class="col-md-12">
+            @* index.cshtml loads here *@
+            @RenderBody()
+        </div>
+
+    </div>
+
     @* This is the Footer of the shop *@
-    <footer class="navbar-fixed-bottom text-center" style="background-color:#1c6c6c; color:white">
-        <p>Angular_Movies©Copyright @DateTime.Now.ToString("dd-MM-yyyy") | PFinnfors WassimElBittar maher2u</p>
+    <footer class="navbar-fixed-bottom text-center">
+        <p>Angular Movies © @DateTime.Now.ToString("dd-MM-yyyy") | PFinnfors WassimElBittar maher2u</p>
     </footer>
 
     @Scripts.Render("~/Scripts/ThirdParty")

@@ -12,6 +12,9 @@ namespace WebshopProject
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
+            //...
+            ControllerBuilder.Current.SetControllerFactory(new WebshopProject.Controllers.ApiControllerFactory());
         }
     }
 }

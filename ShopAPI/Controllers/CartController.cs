@@ -4,14 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using WebshopProject.Models;
 
 namespace ShopAPI.Controllers
 {
     public class CartController : ApiController
     {
         //Webshop database model
-        private ModelClass db = new ModelClass();
+        //private ModelClass db = new ModelClass();
 
         // GET api/Cart
         public IEnumerable<string> Get()

@@ -3,6 +3,7 @@
  margin:0px auto;
  width:100%;height:100%;
 }
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -49,4 +50,9 @@ th {
 
 hr {
     border: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
 }
